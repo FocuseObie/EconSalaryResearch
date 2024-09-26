@@ -47,7 +47,7 @@ def write_salary_data_to_csv(salary_values, program_name, file_path):
             writer.writerow([program_name, cohort, years_out, percentile, f"${salary_values[i]:,.2f}"])
     
 # Load the JSON content (adjust the path to your file location)
-with open(r"C:\Users\H3AD\Desktop\saved_json_response_1.json", 'r') as f:
+with open(<insert desired path>, 'r') as f:
     json_data = json.load(f)
 
 # Extract salary data
@@ -57,7 +57,7 @@ salary_values = extract_salary_data(json_data)
 program_name = extract_program_name(json_data)
 
 # Write the salary data to a CSV file
-csv_file_path = r"C:\Users\H3AD\Desktop\salary_data3.csv"
+csv_file_path = <insert desired path>
 write_salary_data_to_csv(salary_values, program_name, csv_file_path)
 
 print(f"Salary data has been written to {csv_file_path}")
