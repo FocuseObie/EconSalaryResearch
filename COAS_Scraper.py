@@ -62,8 +62,8 @@ for index in range(29):
             # Attempt to parse the response as JSON
             json_response = response.json()
             
-            # Define a dynamic file name based on the index
-            output_file_path = rf'C:\Users\H3AD\Desktop\saved_json_response_{index}.json'
+            # Define a dynamic file name based on the index 
+            output_file_path = <insert desired path>
             
             # Save the JSON response to a file
             save_json_response(json_response, output_file_path)
